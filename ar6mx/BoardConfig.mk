@@ -7,6 +7,11 @@ include device/bcm/ar6mx/build_id.mk
 include device/bcm/ar6mx/AR6MXBoardConfigComm.mk
 include device/fsl-proprietary/gpu-viv/fsl-gpu.mk
 
+# camera hal v2
+IMX_CAMERA_HAL_V2 := true
+
+BOARD_HAVE_USB_CAMERA := true
+
 BOARD_KERNEL_CMDLINE := console=ttymxc0,115200 init=/init video=mxcfb0 video=mxcfb1:off video=mxcfb2:off fbmem=10M fb0base=0x27b00000 vmalloc=400M androidboot.console=ttymxc0
 
 
